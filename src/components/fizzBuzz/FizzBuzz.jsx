@@ -17,11 +17,13 @@ const FizzBuzz = () => {
   };
 
   const showMessage = () => {
-    if (!(count % 15)) {
+    if (count === 0) {
+      return <p>{count}</p>;
+    } else if (!(count % 15)) {
       return <p>FizzBuzz!</p>;
-    } else if (count % 5 === 0) {
+    } else if (!(count % 5)) {
       return <p>Buzz!</p>;
-    } else if (count % 3 === 0) {
+    } else if (!(count % 3)) {
       return <p>Fizz!</p>;
     } else {
       return <p>{count}</p>;
@@ -31,7 +33,7 @@ const FizzBuzz = () => {
   return (
     <div className="fizz-buzz-box">
       <button onClick={onMinusClick}> - </button>
-      <p>{showMessage()}</p>
+      <div className="message">{showMessage()}</div>
       <button onClick={onPlusClick}> + </button>
     </div>
   );

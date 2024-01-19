@@ -1,30 +1,15 @@
-body {
-  display: flex;
-  justify-content: center;
-}
-
 .fizz-buzz-box {
-  width: 100%;
-  height: 70vh;
+  margin: 1rem auto;
+  width: 80%;
+  height: 100vh;
   display: flex;
-  gap: 2rem;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   background-color: aquamarine;
   border: 5px solid rebeccapurple;
 }
 
-/* .buttons-box {
-  width: 100%;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-} */
-
 button {
-  /* width: 70%; */
   padding: 1rem 2rem;
   font-size: 4rem;
   border-radius: 1rem;
@@ -32,8 +17,10 @@ button {
   background-color: rgb(227, 180, 24);
 }
 
-p {
+.message {
   font-size: 5rem;
+  width: 40%;
+  text-align: center;
 }
 
 button:hover {
